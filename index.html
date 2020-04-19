@@ -6,15 +6,19 @@
     <title>Compser Guess Game</title>
     <link rel="stylesheet" href="./asssets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./asssets/css/style.css" type="text/css">
+    <script src="asssets/javascript/game.js"></script> 
 </head> 
 <body>
     <header id="banner" class="body">
         <h1>Guess The Composer! v.1 </h1>
         </header>
 
-        <form>
+        <form id="user-guess">
             <input type="text" placeholder="Enter your guess">
-            <input type="button" value="Submit Guess">
+            <input type="button" value="Submit Guess" onclick="checkUserGuess();">
+            <div>
+                
+            </div>
 
         </form>
     

@@ -12,7 +12,19 @@ body {
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.429;
-    margin: 0;
-    padding: 0;
-    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    width: 100;
+    margin: 10px auto;
+
+}
+
+input {
+  
+
+
 }
