@@ -7,7 +7,7 @@ var images = [ ]
 
 //show random composer image
 function getRandomComposer()  {
-   var rand = Math.floor(Math.random() *)
+   var getRandoComposer = [Math.floor(Math.random() * composerOption.length)];
 
 }
 //show random composer name with underscores
@@ -17,6 +17,7 @@ function showRandomComposer() {
 
 //take user guess
 function checkUserGuess()  {
+   document.onkeyup
 
 }
 //play song if correct
@@ -38,4 +39,4 @@ function showScore() {
 
 }
 
-
+s
