@@ -1,40 +1,33 @@
-var composerOption [ "bach", "mozart" , "ravel" , "faure" , "chopin" , "debussy" , "wagner" , "liszt", "bruckner" , "brahms" , "schumann" , "haydn" , "tchaikovsky"];
-var wins
-var lossess
+var composerOption = [ "bach", "mozart" , "beethoven" , "mahler" , "wagner" , "chopin" , "haydn" , "ravel" , "faure" , "debussy" , "liszt" , "schumann" , "stravinsky"];
+var randoComposer = getRandoComposer();
+let wordStatus = null;
 
 
-var composers = composerOption[Math.floor(Math.random() * composerOption.length)];
+//pick a composer 
+function randomComposer() {
+   answer = composerOption[Math.floor(Math.random() * composerOption.length)];
+ }
 
-var answerArray = [];
-for (var i = 0; i < composerOption.length; i++) {
-   answerArray[i] = "_";
-}
-
-var remainingLetters = word.length;
-
-
-var guess = prompt("Guess a letter , or click Cancel to stop playing");
-if (guess === null) {
-   break;
-} else if (guess.length !==1) {
-   alert("Enter a single letter");
-}  else {
-   for (var j = 0; j < word.length; j++) {
-      if (word[j] === guess) {
-         answerArray[j] = guess;
-         remainingLetters--;
+ //check player guess
+function checkPlayerGuess() {
+   var guess = document.getElementById(player-guess)["0"].value;
+      if(guess ==randoComposer) {
+         displayoutput("correct");
       }
-   }
+      else(guess !==randoComposer ); {
+
+         displayoutput("wrong!")
+      }
 }
+//show empty name of Composer with "_"
+function guessedWord() {
+   wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+ 
+   document.getElementById('wordHighlight').innerHTML = wordStatus;
+ }
+ 
+ guessedWord();
 
-function checkUserGuess() {
-   var guess = document.getElementById("user-guess")["0"].value;
-   alert (guess);
+ function reset() {
 
-    
-}
-
-function displayOutput() {
-
-}
-
+ }
