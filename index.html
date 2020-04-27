@@ -6,18 +6,23 @@
     <title>Guess the Composer! v.1</title>
     <link href="/asssets/css/reset.css" rel="stylesheet">
     <link href="/asssets/css/style.css" rel="stylesheet">
-    <script src="game.js"></script>
+   
 </head>
 <body>
     <header id="banner" class="body">
         <h1>Guess The Composer! v.1 </h1>
-        <img src="asssets/images/The_Voyage_of_Life_Childhood.jpg">
-        </header>
+    </header>
+    <img id="content" src = "asssets/images/The_Savage_State.jpg">
 
-    <form>
+    <a id="new-game">New Game</a>
+
+     
+
+    <form id ="user-guess">
         <input type="text" placeholder="Enter your guess">
-        <input type="button" value="Submit Guess">
+        <input type="button" value="Submit Guess" onclick="checkUserGuess();">
     </form>
-    
+
+     <script src="asssets/javascript/game.js"></script>
 </body>
 </html>
