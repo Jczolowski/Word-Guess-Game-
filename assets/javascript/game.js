@@ -26,7 +26,7 @@ function getRandomComposer()  {
 //show random composer image
 function startGame() {
    getRandomComposer()
-   startingImage.src="asssets/images/" + chosenImage
+   startingImage.src="assets/images/" + chosenImage
    console.log("startGame")
 }
 
